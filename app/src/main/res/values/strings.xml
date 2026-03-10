@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My BirthdayCardApplication</string>
+    <string name="title_activity_compose_tutorial">ComposeTutorialActivity</string>
+    <string name="title_activity_task_completed">TaskCompletedActivity</string>
+    <string name="title_activity_compose_quadrant">ComposeQuadrant</string>
+    <string name="title_activity_material_design">MaterialDesign</string>
+    <string name="title_activity_basic_code">BasicCodeActivity</string>
+</resources>
