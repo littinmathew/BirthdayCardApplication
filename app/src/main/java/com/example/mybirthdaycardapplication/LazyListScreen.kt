@@ -21,6 +21,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -47,7 +48,8 @@ class LazyListScreen : ComponentActivity() {
 fun MyLazyListApp(
     modifier: Modifier = Modifier
 ) {
-    var shouldShowOnboarding by remember { mutableStateOf(true) }
+    //Instead of using remember you can use rememberSaveable. This will save each state surviving configuration changes (such as rotations) and process death.
+    var shouldShowOnboarding by rememberSaveable  { mutableStateOf(true) }
 
     Surface(modifier) {
         if (shouldShowOnboarding) {
