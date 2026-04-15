@@ -6,4 +6,6 @@
     <string name="title_activity_material_design">MaterialDesign</string>
     <string name="title_activity_basic_code">BasicCodeActivity</string>
     <string name="title_activity_lazy_list_screen">LazyListScreen</string>
+    <string name="title_activity_compose_state">ComposeState</string>
+    <string name="title_activity_testing">TestingActivity</string>
 </resources>

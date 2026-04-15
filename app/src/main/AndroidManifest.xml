@@ -15,10 +15,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyBirthdayCardApplication">
         <activity
+            android:name=".TestingActivity"
+            android:exported="true"
+            android:label="@string/title_activity_testing"
+            android:theme="@style/Theme.MyBirthdayCardApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ComposeState"
+            android:exported="false"
+            android:label="@string/title_activity_compose_state"
+            android:theme="@style/Theme.MyBirthdayCardApplication" />
+        <activity
             android:name=".LazyListScreen"
             android:exported="true"
             android:label="@string/title_activity_lazy_list_screen"
-            android:theme="@style/Theme.MyBirthdayCardApplication" >
+            android:theme="@style/Theme.MyBirthdayCardApplication">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
